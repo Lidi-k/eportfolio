@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Health ePortfolio</title>
+  <!-- Google font for retro monospace style -->
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- global noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Top navigation bar -->
+  <nav class="navbar">
+    <a href="#home" class="nav-logo">MPH Portfolio</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="channel-indicator" id="channelIndicator"></div>
+  </nav>
+
+  <!-- Hero section / Home -->
+  <header id="home" class="hero">
+    <!-- swirling blue gradient background -->
+    <div class="swirl-bg"></div>
+    <h1 class="glitch" data-text="Emerging Public Health Researcher">Emerging Public Health Researcher</h1>
+    <p class="intro-text">Harnessing data, epidemiology and innovation to safeguard community health.</p>
+    <a href="#projects" class="cta-button">View My Work</a>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="content-section">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I am an MPH student passionate about translating data into action. With training in epidemiology,
+        disease surveillance and molecular biology, I combine analytical rigour with hands‑on experience to
+        support infectious disease research and public health interventions. My work spans vector‑borne disease
+        prevention, chronic disease analytics and health equity mapping. I thrive on collaboration and bring a
+        systems‑thinking approach to complex health challenges.
+      </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="content-section">
+      <h2 class="section-title">Education</h2>
+      <ul class="education-list">
+        <li><strong>Master of Public Health</strong>, University of Georgia (GPA 4.00, expected Aug 2026) &ndash; Coursework includes
+          public health surveillance, biostatistics, health policy & management, environmental health science and
+          disaster management.</li>
+        <li><strong>Bachelor of Science in Biological Sciences (Neurobiology)</strong>, Georgia State University (GPA 3.64, May 2024) &ndash;
+          Completed rigorous coursework in genetics, cell & molecular biology, microbiology & public health and
+          clinical neuroscience.</li>
+      </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content-section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skill-columns">
+        <div>
+          <h3>Analytical & Technical</h3>
+          <ul>
+            <li>Communicable disease surveillance, case investigation and contact tracing</li>
+            <li>Data wrangling and statistical analysis (Python, R, SAS)</li>
+            <li>Interactive dashboarding (Tableau, Power BI) and GIS mapping</li>
+            <li>Machine learning & time‑series forecasting for health data</li>
+            <li>EHR/claims data exploration and SQL querying</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soft & Leadership</h3>
+          <ul>
+            <li>Effective communication & health education</li>
+            <li>Team collaboration and project management</li>
+            <li>Program planning & evaluation using CDC frameworks</li>
+            <li>Cultural competence & community engagement</li>
+            <li>HIPAA compliance and data privacy best practices</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-list">
+        <article class="project-item">
+          <h3>Chronic Disease Trend Analysis</h3>
+          <p>Analyzed 20 years of obesity and diabetes prevalence across U.S. states using CDC BRFSS data. Built
+            interactive line charts and choropleth maps to highlight geographic disparities and trends over time.</p>
+        </article>
+        <article class="project-item">
+          <h3>Behavioral Risk Factor Modeling</h3>
+          <p>Used BRFSS survey data and SAS to identify lifestyle factors associated with hypertension. Applied survey
+            weights, ran multivariable logistic regression and interpreted odds ratios to inform public health messaging.</p>
+        </article>
+        <article class="project-item">
+          <h3>Heart Disease Risk Prediction</h3>
+          <p>Developed a suite of machine learning models (logistic regression, random forest, XGBoost) on UCI heart
+            disease data to predict presence of heart disease. Evaluated models with ROC‑AUC and explained feature
+            importance to health audiences.</p>
+        </article>
+        <article class="project-item">
+          <h3>Geospatial Health Mapping</h3>
+          <p>Created an interactive map of diabetes prevalence and healthcare facility locations at the county level
+            using Python (GeoPandas/Folium). Identified clusters of high burden and poor access to inform resource
+            allocation.</p>
+        </article>
+        <article class="project-item">
+          <h3>EHR Data Exploration</h3>
+          <p>Performed exploratory analysis on synthetic ICU data (MIMIC‑IV). Queried patient demographics and
+            diagnoses via SQL, summarized length of stay and visualized top admission reasons using Python.</p>
+        </article>
+        <article class="project-item">
+          <h3>NLP on Clinical Text</h3>
+          <p>Applied NLP techniques to de‑identified clinical notes to extract symptom and medication entities using
+            spaCy and BioBERT. Generated word clouds and identified common themes in discharge summaries.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+      <h2 class="section-title">Contact</h2>
+      <p>If you’d like to collaborate or learn more about my work, please get in touch:</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:hi@yourdomain.com">hi@yourdomain.com</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
