@@ -3,140 +3,358 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Public Health ePortfolio</title>
-  <!-- Google font for retro monospace style -->
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <meta
+    name="description"
+    content="Lidya Kassahun's public health portfolio featuring work in surveillance, program evaluation, data visualization and community health."
+  >
+
+  <title>Lidya Kassahun | Public Health Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- global noise overlay -->
-  <div class="noise"></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- Top navigation bar -->
-  <nav class="navbar">
-    <a href="#home" class="nav-logo">MPH Portfolio</a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="channel-indicator" id="channelIndicator"></div>
-  </nav>
-
-  <!-- Hero section / Home -->
   <header id="home" class="hero">
-    <!-- swirling blue gradient background -->
-    <div class="swirl-bg"></div>
-    <h1 class="glitch" data-text="Emerging Public Health Researcher">Emerging Public Health Researcher</h1>
-    <p class="intro-text">Harnessing data, epidemiology and innovation to safeguard community health.</p>
-    <a href="#projects" class="cta-button">View My Work</a>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="nav-logo">Lidya Kassahun</a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        Menu
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Public health • Data • Evaluation</p>
+
+      <h1>
+        Turning evidence into
+        <span>community impact.</span>
+      </h1>
+
+      <div class="hero-bottom">
+        <p>
+          Public health professional translating surveillance, program and
+          community data into clear insights and actionable recommendations.
+        </p>
+
+        <a href="#projects" class="arrow-link">
+          Explore my work <span aria-hidden="true">↘</span>
+        </a>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <!-- About Section -->
-    <section id="about" class="content-section">
-      <h2 class="section-title">About Me</h2>
-      <p>
-        I am an MPH student passionate about translating data into action. With training in epidemiology,
-        disease surveillance and molecular biology, I combine analytical rigour with hands‑on experience to
-        support infectious disease research and public health interventions. My work spans vector‑borne disease
-        prevention, chronic disease analytics and health equity mapping. I thrive on collaboration and bring a
-        systems‑thinking approach to complex health challenges.
-      </p>
-    </section>
+  <div class="marquee" aria-label="Areas of focus">
+    <div class="marquee-track">
+      <span>
+        Surveillance ✦ Program Evaluation ✦ Health Equity ✦ Data Visualization
+        ✦ Community Health ✦
+      </span>
 
-    <!-- Education Section -->
-    <section id="education" class="content-section">
-      <h2 class="section-title">Education</h2>
-      <ul class="education-list">
-        <li><strong>Master of Public Health</strong>, University of Georgia (GPA 4.00, expected Aug 2026) &ndash; Coursework includes
-          public health surveillance, biostatistics, health policy & management, environmental health science and
-          disaster management.</li>
-        <li><strong>Bachelor of Science in Biological Sciences (Neurobiology)</strong>, Georgia State University (GPA 3.64, May 2024) &ndash;
-          Completed rigorous coursework in genetics, cell & molecular biology, microbiology & public health and
-          clinical neuroscience.</li>
-      </ul>
-    </section>
+      <span aria-hidden="true">
+        Surveillance ✦ Program Evaluation ✦ Health Equity ✦ Data Visualization
+        ✦ Community Health ✦
+      </span>
+    </div>
+  </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="content-section">
-      <h2 class="section-title">Skills</h2>
-      <div class="skill-columns">
-        <div>
-          <h3>Analytical & Technical</h3>
-          <ul>
-            <li>Communicable disease surveillance, case investigation and contact tracing</li>
-            <li>Data wrangling and statistical analysis (Python, R, SAS)</li>
-            <li>Interactive dashboarding (Tableau, Power BI) and GIS mapping</li>
-            <li>Machine learning & time‑series forecasting for health data</li>
-            <li>EHR/claims data exploration and SQL querying</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Soft & Leadership</h3>
-          <ul>
-            <li>Effective communication & health education</li>
-            <li>Team collaboration and project management</li>
-            <li>Program planning & evaluation using CDC frameworks</li>
-            <li>Cultural competence & community engagement</li>
-            <li>HIPAA compliance and data privacy best practices</li>
-          </ul>
+  <main id="main-content">
+    <!-- ABOUT -->
+    <section id="about" class="section section-about reveal">
+      <p class="section-label">01 / About</p>
+
+      <div class="about-grid">
+        <h2>I connect public health evidence with practical action.</h2>
+
+        <div class="about-copy">
+          <p>
+            I am a public health professional with an MPH from the University
+            of Georgia and more than three years of experience across healthcare
+            operations, disease prevention, program evaluation and
+            community-based research.
+          </p>
+
+          <p>
+            My work focuses on translating surveillance, performance and
+            community data into accessible reports, dashboards and
+            recommendations. I am especially interested in infectious disease
+            surveillance, health equity and program improvement.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="content-section">
-      <h2 class="section-title">Projects</h2>
+    <!-- EDUCATION -->
+    <section id="education" class="section section-education reveal">
+      <p class="section-label">02 / Education</p>
+
+      <h2>Education grounded in science, systems and service.</h2>
+
+      <div class="education-grid">
+        <article class="education-card education-card-primary">
+          <p class="card-kicker">University of Georgia</p>
+
+          <h3>Master of Public Health</h3>
+
+          <p class="degree-meta">GPA 4.00 • August 2026</p>
+
+          <p>
+            Coursework included epidemiology, applied biostatistics, public
+            health surveillance, program evaluation, health policy and
+            management, environmental health and disaster management.
+          </p>
+        </article>
+
+        <article class="education-card education-card-secondary">
+          <p class="card-kicker">Georgia State University</p>
+
+          <h3>B.S. in Biological Sciences</h3>
+
+          <p class="degree-meta">
+            Neurobiology • Minor in Psychology • May 2024
+          </p>
+
+          <p>
+            A scientific foundation spanning biology, neuroscience, psychology,
+            microbiology and public health.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-skills reveal">
+      <p class="section-label section-label-light">03 / Capabilities</p>
+
+      <div class="skills-heading">
+        <h2>
+          What I do<br>
+          (and do well)
+        </h2>
+
+        <p>
+          Combining analytical thinking, community engagement and clear
+          communication to support stronger public health programs.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article>
+          <span>01</span>
+
+          <h3>Surveillance &amp; Evaluation</h3>
+
+          <p>
+            Infectious disease surveillance, indicator development, logic
+            models, CDC evaluation frameworks and performance monitoring.
+          </p>
+        </article>
+
+        <article>
+          <span>02</span>
+
+          <h3>Data &amp; Visualization</h3>
+
+          <p>
+            Excel, Power BI, Tableau, R, data cleaning, quality assurance,
+            trend analysis and accessible dashboard development.
+          </p>
+        </article>
+
+        <article>
+          <span>03</span>
+
+          <h3>Program Coordination</h3>
+
+          <p>
+            Project tracking, stakeholder communication, partner coordination,
+            participant outreach and event implementation.
+          </p>
+        </article>
+
+        <article>
+          <span>04</span>
+
+          <h3>Health Communication</h3>
+
+          <p>
+            Technical reporting, presentations, infographics, health education
+            and translation of findings for varied audiences.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-projects reveal">
+      <div class="projects-heading">
+        <p class="section-label">04 / Selected work</p>
+
+        <h2>Projects shaped by data, equity and implementation.</h2>
+      </div>
+
       <div class="project-list">
-        <article class="project-item">
-          <h3>Chronic Disease Trend Analysis</h3>
-          <p>Analyzed 20 years of obesity and diabetes prevalence across U.S. states using CDC BRFSS data. Built
-            interactive line charts and choropleth maps to highlight geographic disparities and trends over time.</p>
+        <article class="project-card project-purple">
+          <div class="project-number">01</div>
+
+          <p class="project-type">Dashboard • In progress</p>
+
+          <h3>HIV Burden Dashboard — Metro Atlanta</h3>
+
+          <p>
+            Developing an interactive Tableau dashboard using CDC AtlasPlus,
+            Georgia DPH and AIDSVu data to examine HIV diagnosis trends, care
+            gaps and demographic disparities across Fulton, DeKalb and Gwinnett
+            counties.
+          </p>
+
+          <ul class="tag-list" aria-label="Tools and methods">
+            <li>Tableau</li>
+            <li>Excel</li>
+            <li>Surveillance</li>
+            <li>Health Equity</li>
+          </ul>
         </article>
-        <article class="project-item">
-          <h3>Behavioral Risk Factor Modeling</h3>
-          <p>Used BRFSS survey data and SAS to identify lifestyle factors associated with hypertension. Applied survey
-            weights, ran multivariable logistic regression and interpreted odds ratios to inform public health messaging.</p>
+
+        <article class="project-card project-yellow">
+          <div class="project-number">02</div>
+
+          <p class="project-type">
+            Community assessment • Evaluation
+          </p>
+
+          <h3>Until It Ends: HIV Prevention in Gwinnett County</h3>
+
+          <p>
+            Completed a community needs assessment and CDC-informed evaluation
+            plan examining HIV burden, prevention services, linkage to care and
+            program performance. The work supported monitoring of key goals
+            and identification of documentation and service-delivery gaps.
+          </p>
+
+          <ul class="tag-list" aria-label="Tools and methods">
+            <li>Program Evaluation</li>
+            <li>Needs Assessment</li>
+            <li>HIV Prevention</li>
+          </ul>
         </article>
-        <article class="project-item">
-          <h3>Heart Disease Risk Prediction</h3>
-          <p>Developed a suite of machine learning models (logistic regression, random forest, XGBoost) on UCI heart
-            disease data to predict presence of heart disease. Evaluated models with ROC‑AUC and explained feature
-            importance to health audiences.</p>
+
+        <article class="project-card project-green">
+          <div class="project-number">03</div>
+
+          <p class="project-type">
+            Data quality • Knowledge translation
+          </p>
+
+          <h3>American Cancer Society Impact Story Explorer</h3>
+
+          <p>
+            Cleaned, categorized and quality-checked more than 800 records
+            spanning three years, then developed a searchable Power BI
+            experience that helped internal stakeholders explore patient and
+            health-system impact stories.
+          </p>
+
+          <ul class="tag-list" aria-label="Tools and methods">
+            <li>Power BI</li>
+            <li>Excel</li>
+            <li>Data QA</li>
+            <li>Knowledge Translation</li>
+          </ul>
         </article>
-        <article class="project-item">
-          <h3>Geospatial Health Mapping</h3>
-          <p>Created an interactive map of diabetes prevalence and healthcare facility locations at the county level
-            using Python (GeoPandas/Folium). Identified clusters of high burden and poor access to inform resource
-            allocation.</p>
-        </article>
-        <article class="project-item">
-          <h3>EHR Data Exploration</h3>
-          <p>Performed exploratory analysis on synthetic ICU data (MIMIC‑IV). Queried patient demographics and
-            diagnoses via SQL, summarized length of stay and visualized top admission reasons using Python.</p>
-        </article>
-        <article class="project-item">
-          <h3>NLP on Clinical Text</h3>
-          <p>Applied NLP techniques to de‑identified clinical notes to extract symptom and medication entities using
-            spaCy and BioBERT. Generated word clouds and identified common themes in discharge summaries.</p>
+
+        <article class="project-card project-cream">
+          <div class="project-number">04</div>
+
+          <p class="project-type">
+            Leadership • Professional development
+          </p>
+
+          <h3>Personal Public Health Leadership Framework</h3>
+
+          <p>
+            Created an evidence-informed leadership framework grounded in
+            collaboration, equity, empathy, integrity and respect, drawing from
+            transformational, authentic and servant-leadership approaches.
+          </p>
+
+          <ul class="tag-list" aria-label="Themes">
+            <li>Leadership</li>
+            <li>Equity</li>
+            <li>Systems Thinking</li>
+          </ul>
         </article>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="content-section">
-      <h2 class="section-title">Contact</h2>
-      <p>If you’d like to collaborate or learn more about my work, please get in touch:</p>
-      <ul class="contact-list">
-        <li>Email: <a href="mailto:hi@yourdomain.com">hi@yourdomain.com</a></li>
-        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
-      </ul>
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact reveal">
+      <p class="section-label">05 / Contact</p>
+
+      <h2>Let’s turn public health evidence into action.</h2>
+
+      <p class="contact-intro">
+        I’m open to opportunities and collaborations in public health analysis,
+        epidemiology, program evaluation and program improvement.
+      </p>
+
+      <div class="contact-links">
+        <!-- Replace YOUR-EMAIL with your real email address. -->
+        <a href="mailto:YOUR-EMAIL">
+          Email me <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          href="https://github.com/lidi-k"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+
+        <!-- Replace YOUR-LINKEDIN-URL with your LinkedIn URL. -->
+        <a
+          href="https://www.linkedin.com/in/lidyakassahun/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn <span aria-hidden="true">↗</span>
+        </a>
+      </div>
     </section>
   </main>
+
+  <footer>
+    <p>Lidya Kassahun</p>
+
+    <p>
+      Public Health Portfolio • <span id="year">2026</span>
+    </p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
