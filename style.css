@@ -2031,6 +2031,78 @@ footer {
   background: var(--pale);
 }
 
+/* CURRENT PORTFOLIO MARKUP COMPATIBILITY */
+
+.project-lab.lab {
+  background: var(--cream);
+}
+
+.lab-tabs {
+  margin-top: 2rem;
+}
+
+.lab-tab-panels {
+  min-height: 220px;
+}
+
+.contact-block.contact-inner {
+  padding-top: clamp(1.5rem, 3vw, 3rem);
+  padding-bottom: 0;
+}
+
+.contact-block .contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.footer .footer-inner {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  align-items: start;
+  gap: 3rem;
+}
+
+.footer .footer-note {
+  margin-top: 0;
+  text-align: right;
+}
+
+.dashboard-card,
+.dashboard-arrow,
+.dashboard-dot,
+.image-close,
+.document-close {
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .document-head,
+  .image-head {
+    align-items: flex-start;
+  }
+
+  .document-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .document-shell,
+  .image-shell {
+    height: 92vh;
+    border-radius: 14px;
+  }
+
+  .footer .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .footer .footer-note {
+    text-align: left;
+  }
+}
+
 /* TABLET */
 
 @media (max-width: 1050px) {
