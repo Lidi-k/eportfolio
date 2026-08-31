@@ -807,7 +807,6 @@
           </span>
         </button>
 
-        <!-- NEW CARD 1: Vaccines infographic (poster button) -->
         <button class="mini-project poster" type="button" data-title="Vaccines: Protecting You &amp; Your Community" data-document="assets/academic/vaccines-protecting-community.pdf">
           <span class="mini-project-image">
             <img src="assets/academic/vaccines-protecting-community.png" alt="Preview of the Vaccines: Protecting You &amp; Your Community infographic">
@@ -817,13 +816,12 @@
             <span class="mini-project-type">Health education · Infographic</span>
             <h4>Vaccines: Protecting You &amp; Your Community</h4>
             <p>
-              A plain-language health-education infographic explaining how vaccines work, addressing common misconceptions, summarizing recommended vaccines across the life course, and directing people toward vaccination resources.
+              A plain-language health-education infographic explaining how vaccines work, addressing common misconceptions, summarizing recommended vaccines across the life course.
             </p>
             <span class="mini-open">Click to expand and view ↗</span>
           </span>
         </button>
 
-        <!-- NEW CARD 2: Core Memories template suite (anchor link) -->
         <a class="mini-project slide" href="https://www.canva.com/design/DAHM6CmpAX8/_Fve--BN_xOBABLaHcfY5A/view?utm_content=DAHM6CmpAX8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
           <span class="mini-project-image">
             <img src="assets/academic/core-memories-template-suite.png" alt="Preview of the Core Memories Scrapbook Suite template collection">
@@ -833,7 +831,7 @@
             <span class="mini-project-type">Knowledge translation · Template suite</span>
             <h4>Core Memories Scrapbook Suite</h4>
             <p>
-              A coordinated collection of Hope, Relief, Courage, Purpose, and Power templates designed to translate patient and health-system impact stories into engaging visual narratives.
+              A coordinated collection of Hope, Relief, Courage, Purpose, and Power templates designed to translate patient and health-system impact stories.
             </p>
             <span class="mini-open">View template suite in Canva ↗</span>
           </span>
@@ -1023,7 +1021,10 @@
       </p>
     </div>
 
-    <div class="lab-grid" id="labGrid"></div>
+    <div class="lab-tabs">
+      <div class="lab-tab-buttons" id="tabButtons"></div>
+      <div class="lab-tab-panels" id="tabPanels"></div>
+    </div>
 
   </div>
 </section>
@@ -1054,6 +1055,44 @@
 
   </div>
 </section>
+
+<!-- DOCUMENT MODAL -->
+<div class="modal" id="documentModal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="documentTitle"></h3>
+      <button class="modal-close" id="documentClose" aria-label="Close document">✕</button>
+    </div>
+    <div class="modal-body">
+      <iframe id="documentView"></iframe>
+      <a id="documentOpen" target="_blank" rel="noopener noreferrer" class="btn btn-small">Open in new window</a>
+    </div>
+  </div>
+</div>
+
+<!-- IMAGE MODAL -->
+<div class="modal" id="imageModal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="imageTitle"></h3>
+      <button class="modal-close" id="imageClose" aria-label="Close image">✕</button>
+    </div>
+    <div class="modal-body" id="imageStage">
+      <img id="imageView" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- SIDE PANEL -->
+<div class="overlay" id="overlay" onclick="closePanel()"></div>
+<div class="side-panel" id="sidePanel">
+  <button class="panel-close" onclick="closePanel()" aria-label="Close panel">✕</button>
+  <div class="panel-scroll">
+    <div id="panelContent"></div>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer class="footer">
