@@ -31,6 +31,8 @@ const academicCards = [
 let academicIndex = 0;
 
 function showAcademicProject(index) {
+  if (!academicCards.length) return;
+
   academicIndex =
     (index + academicCards.length) % academicCards.length;
 
@@ -45,17 +47,26 @@ document
   .getElementById("academicPrev")
   .addEventListener("click", () => {
     showAcademicProject(academicIndex - 1);
+    restartAcademicRotation();
   });
 
 document
   .getElementById("academicNext")
   .addEventListener("click", () => {
     showAcademicProject(academicIndex + 1);
+    restartAcademicRotation();
   });
 
 let academicRotation = setInterval(() => {
   showAcademicProject(academicIndex + 1);
 }, 5500);
+
+function restartAcademicRotation() {
+  clearInterval(academicRotation);
+  academicRotation = setInterval(() => {
+    showAcademicProject(academicIndex + 1);
+  }, 5500);
+}
 
 academicCarousel.addEventListener("mouseenter", () => {
   clearInterval(academicRotation);
@@ -64,6 +75,9 @@ academicCarousel.addEventListener("mouseenter", () => {
 academicCarousel.addEventListener("focusin", () => {
   clearInterval(academicRotation);
 });
+
+academicCarousel.addEventListener("mouseleave", restartAcademicRotation);
+academicCarousel.addEventListener("focusout", restartAcademicRotation);
 
 /* ACADEMIC PDF VIEWER */
 
@@ -90,8 +104,11 @@ function closeDocument() {
 }
 
 academicCards.forEach((card) => {
+  const documentURL = card.dataset.document;
+  if (!documentURL) return;
+
   card.addEventListener("click", () => {
-    openDocument(card.dataset.title, card.dataset.document);
+    openDocument(card.dataset.title, documentURL);
   });
 });
 
@@ -127,6 +144,8 @@ const dashboardPagination =
 let dashboardIndex = 0;
 
 function showDashboard(index, behavior = "smooth") {
+  if (!dashboardCards.length) return;
+
   dashboardIndex =
     (index + dashboardCards.length) % dashboardCards.length;
 
@@ -168,6 +187,7 @@ dashboardCards.forEach((card, index) => {
 
   dot.addEventListener("click", () => {
     showDashboard(index);
+    resumeDashboardRotation();
   });
 
   dashboardPagination.appendChild(dot);
@@ -179,12 +199,14 @@ document
   .getElementById("dashboardPrev")
   .addEventListener("click", () => {
     showDashboard(dashboardIndex - 1);
+    resumeDashboardRotation();
   });
 
 document
   .getElementById("dashboardNext")
   .addEventListener("click", () => {
     showDashboard(dashboardIndex + 1);
+    resumeDashboardRotation();
   });
 
 /* AUTOMATIC DASHBOARD ROTATION */
@@ -224,6 +246,8 @@ dashboardGallery.addEventListener(
   "focusout",
   resumeDashboardRotation
 );
+
+showDashboard(0, "auto");
 
 /* DASHBOARD IMAGE VIEWER */
 
