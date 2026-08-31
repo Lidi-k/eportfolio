@@ -22,8 +22,7 @@
   name="description"
   content="Lidya Kassahun, MPH — public health portfolio."
 >
-<title>Lidya Kassahun | Public Health Portfolio</title>
-<title>Evidence, translated into action</title>
+<title>Evidence Into Action | Lidya Kassahun, MPH</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1003,7 +1002,7 @@
 </section>
 
 <!-- PROJECT LAB -->
-<section class="project-lab pad" id="project-lab">
+<section class="project-lab lab pad" id="project-lab">
   <div class="wrap">
 
     <div class="heading-row">
@@ -1022,7 +1021,7 @@
     </div>
 
     <div class="lab-tabs">
-      <div class="lab-tab-buttons" id="tabButtons"></div>
+      <div class="lab-tab-buttons tab-buttons" id="tabButtons"></div>
       <div class="lab-tab-panels" id="tabPanels"></div>
     </div>
 
@@ -1035,7 +1034,7 @@
 
     <p class="kicker">Contact</p>
 
-    <div class="contact-block">
+    <div class="contact-block contact-inner">
       <h2 class="display">Let's connect.</h2>
 
       <p>
@@ -1057,36 +1056,38 @@
 </section>
 
 <!-- DOCUMENT MODAL -->
-<div class="modal" id="documentModal">
-  <div class="modal-overlay"></div>
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3 id="documentTitle"></h3>
-      <button class="modal-close" id="documentClose" aria-label="Close document">✕</button>
+<div class="document-modal" id="documentModal" role="dialog" aria-modal="true" aria-labelledby="documentTitle">
+  <div class="document-shell">
+    <div class="document-head">
+      <strong id="documentTitle">Project document</strong>
+      <div class="document-actions">
+        <a id="documentOpen" href="#" target="_blank" rel="noopener noreferrer">Open in new window ↗</a>
+        <button class="document-close" id="documentClose" type="button" aria-label="Close document">Close ✕</button>
+      </div>
     </div>
-    <div class="modal-body">
-      <iframe id="documentView"></iframe>
-      <a id="documentOpen" target="_blank" rel="noopener noreferrer" class="btn btn-small">Open in new window</a>
-    </div>
+    <iframe class="document-view" id="documentView" title="Project document viewer"></iframe>
   </div>
 </div>
 
 <!-- IMAGE MODAL -->
-<div class="modal" id="imageModal">
-  <div class="modal-overlay"></div>
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3 id="imageTitle"></h3>
-      <button class="modal-close" id="imageClose" aria-label="Close image">✕</button>
+<div class="image-modal" id="imageModal" role="dialog" aria-modal="true" aria-labelledby="imageTitle">
+  <div class="image-shell">
+    <div class="image-head">
+      <strong id="imageTitle">Dashboard image</strong>
+      <button class="image-close" id="imageClose" type="button" aria-label="Close dashboard image">Close ✕</button>
     </div>
-    <div class="modal-body" id="imageStage">
-      <img id="imageView" alt="">
+    <div class="image-stage" id="imageStage">
+      <div class="modal-system-header dashboard-system-header">
+        <img class="dashboard-gauge" src="assets/dashboards/dashboard-gauge-icon.png" alt="">
+        <span>Dashboard</span>
+      </div>
+      <img id="imageView" src="" alt="">
     </div>
   </div>
 </div>
 
 <!-- SIDE PANEL -->
-<div class="overlay" id="overlay" onclick="closePanel()"></div>
+<div class="overlay panel-overlay" id="overlay" onclick="closePanel()"></div>
 <div class="side-panel" id="sidePanel">
   <button class="panel-close" onclick="closePanel()" aria-label="Close panel">✕</button>
   <div class="panel-scroll">
@@ -1096,7 +1097,7 @@
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="wrap">
+  <div class="wrap footer-inner">
     <p>
       <strong>Lidya Kassahun, MPH</strong><br>
       <small>Evidence Into Action · Public Health Portfolio</small>
